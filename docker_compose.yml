@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  localstack:
+    image: localstack/localstack:3.0.2
+    container_name: localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3,sts,iam,lambda
+# - Essa variáveis iram subir serviços como:
+#S3
+#EC2
+#Lambda
+#IAM
+# - Você pode adicionar mais serviços na variável SERVICES
+# - Caso mais serviços sejam adicionados altere os endpoints nos arquivos do Terraform
+    volumes:
+      - ./:/var/lib/localstack
+

@@ -1,0 +1,15 @@
+- name: Listar buckets no LocalStack
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Listar buckets S3
+      amazon.aws.aws_s3_bucket_info:
+        aws_access_key: test
+        aws_secret_key: test
+        region: us-east-1
+        endpoint_url: http://localhost:4566
+      register: resultado
+
+    - name: Exibir resultado
+      debug:
+        var: resultado.buckets
