@@ -1,3 +1,5 @@
+Este repositório tem como objetivo fornecer um ambiente local para simulação de serviços da AWS utilizando o LocalStack. Ele inclui exemplos práticos de uso com Terraform e Ansible, permitindo testar e validar infraestruturas como código sem a necessidade de consumir recursos na nuvem. É uma solução ideal para desenvolvimento, aprendizado e automação de ambientes de nuvem em ambientes locais.
+
 ## Instalar Dependências Fedora
 
 ```bash
