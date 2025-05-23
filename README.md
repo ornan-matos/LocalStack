@@ -1,13 +1,13 @@
 Este repositório tem como objetivo fornecer um ambiente local para simulação de serviços da AWS utilizando o LocalStack. Ele inclui exemplos práticos de uso com Terraform e Ansible, permitindo testar e validar infraestruturas como código sem a necessidade de consumir recursos na nuvem. É uma solução ideal para desenvolvimento, aprendizado e automação de ambientes de nuvem em ambientes locais.
 
-## Instalar Dependências Fedora
+## ✅ Instalar Dependências Fedora
 
 ```bash
 sudo dnf4 config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo -y;
 sudo dnf install awscli2 ansible-galaxy terraform -y;
 ```
 
-#### Docker
+#### Configurar Docker
 ```bash
 sudo dnf install dnf-plugins-core -y;
 sudo dnf4 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo -y;
